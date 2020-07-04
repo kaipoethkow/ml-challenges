@@ -6,3 +6,5 @@ leaderboard. Instead they provide some exploratory data analysis which leads to 
 They might be of interest as a starting point for your own experiments.
 
 *Flavours of Physics* https://www.kaggle.com/c/flavours-of-physics/overview/description
+
+*Costa Rican Household Poverty Level Prediction* https://www.kaggle.com/c/costa-rican-household-poverty-prediction/overview
