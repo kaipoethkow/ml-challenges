@@ -10,4 +10,4 @@ They might be of interest as a starting point for your own experiments.
 
 *Costa Rican Household Poverty Level Prediction* ([solution](costarica.ipynb)) ([challenge description](https://www.kaggle.com/c/costa-rican-household-poverty-prediction/overview))
 
-*Survival modelling of charge-off events for bank loans* ([solution](loan_survival_analysis.ipynb)) ([challenge description](https://medium.com/towards-artificial-intelligence/data-scientist-coding-exercise-e62f4de7df9e))
+*Loan Charge-Off Prediction* ([solution](loan_survival_analysis.ipynb)) ([challenge description](https://medium.com/towards-artificial-intelligence/data-scientist-coding-exercise-e62f4de7df9e))
