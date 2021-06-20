@@ -1,0 +1,5 @@
+tensorflow
+numpy==1.19.5
+pandas
+jupyterlab
+seaborn
