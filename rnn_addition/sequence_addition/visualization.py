@@ -36,3 +36,18 @@ def plot_loss_vs_seq_length(results):
     plt.title(f'Test loss (MSE)\ndepending on sequence length')
     sns.despine()
     plt.xticks(range(len(results)), [res['seq_length'] for res in results])
+
+
+def pred_vs_true_plot(results):
+    for res in results:
+        quantiles = res['quantiles']
+        plt.plot(quantiles.pred_sum,
+                 quantiles.true_sum,
+                 'x-',
+                 linewidth=2,
+                 markersize=7,
+                 markeredgewidth=2,
+                 label=f'Sequence length {res["seq_length"]}')
+        plt.ylabel('Mean true sum')
+        plt.xlabel('Mean predicted sum')
+        plt.legend()
