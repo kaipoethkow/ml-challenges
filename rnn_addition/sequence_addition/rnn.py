@@ -31,7 +31,6 @@ def create_model(X: np.ndarray, Y: np.array) -> Tuple[Sequential, History]:
         keras.layers.SimpleRNN(1, activation='linear')
     ])
 
-    #optimizer = keras.optimizers.Adam(learning_rate=0.0002, epsilon=0.5)#, clipvalue=10)
     optimizer = keras.optimizers.Adam(learning_rate=0.0005, epsilon=0.01)#, clipvalue=10)
     model.compile(loss="mse", optimizer=optimizer)
     history = model.fit(X,
@@ -40,6 +39,6 @@ def create_model(X: np.ndarray, Y: np.array) -> Tuple[Sequential, History]:
                         batch_size=32,
                         validation_split=0.2,
                         verbose=0,
-                        callbacks=[TqdmCallback(verbose=0, tqdm_class=tqdm, desc='Train model')])
+                        callbacks=[TqdmCallback(verbose=0, tqdm_class=tqdm, desc='Train model', ncols=100)])
 
     return model, history

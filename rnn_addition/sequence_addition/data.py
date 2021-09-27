@@ -21,7 +21,7 @@ def get_adding_problem_data(seq_length: int, num_samples: int) -> Tuple[np.array
     df = pd.DataFrame(columns = ['float_seq', 'mask_seq', 'response'], dtype=object)
     
     # populate DataFrame with random floats, binary mask values and the resulting sum
-    for i in tqdm(range(num_samples), 'Create data'):
+    for i in tqdm(range(num_samples), 'Create data', ncols=100):
         float_seq = np.array(np.random.uniform(0, 1, seq_length))
         df.at[i, 'float_seq'] = float_seq
         mask = np.zeros(seq_length)
